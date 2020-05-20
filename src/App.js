@@ -18,6 +18,7 @@ function App() {
         >
           Learn React
         </a>
+        <a href="./bar.js">link</a>
       </header>
     </div>
   );
