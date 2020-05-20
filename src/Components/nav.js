@@ -4,6 +4,8 @@ import '../App.css';
 
 
 function nav(){
+
+    
     return(
         <div className="navbar">
                 <Link className="header-link" to="/about"><h1>About</h1></Link>
