@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Blogentry from './blogentry.js';
+import { withRouter } from 'react-router-dom';
+
 
 
 
@@ -89,4 +91,4 @@ function blog(){
 }
 
 
-export default blog;
+export default withRouter(blog);

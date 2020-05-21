@@ -1,7 +1,7 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import '../App.css';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 
 function nav(){
@@ -18,4 +18,4 @@ function nav(){
     );
 }
 
-export default withRouter(nav);
+export default (nav);
