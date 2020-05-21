@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 import Nav from './Components/nav.js';
@@ -10,15 +11,16 @@ import Experience from './Components/experience.js';
 
 function App() {
   return (
-     <Router>
+    <Router>
     <Switch>
      <div className="App">
 
-       <Nav />
+       <Route path ="/" component={Nav} />
        <Route exact path="/about" component={About}/>
-       <Route exact path="/blog" component={Blog}/>
        <Route exact path="/projects" component={Projects}/>
+       <Route exact path="/blog" component={Blog}/>
        <Route exact path="/experience" component={Experience}/>
+
        
     </div>
     </Switch>
@@ -27,4 +29,4 @@ function App() {
   );
 }
 
-export default App;
+export default (App);

@@ -1,5 +1,7 @@
 import React from 'react';
 import '../App.css';
+import { withRouter } from 'react-router-dom';
+
 
 
 
@@ -24,24 +26,11 @@ class Blogentry extends React.Component{
             date: "",
             description: ""
         };
-        // this.updateText = this.updateText.bind(this);
-        // this.addItem = this.addItem.bind(this);
-        // this.deleteItem = this.deleteItem.bind(this);
     }
-    // updateText = () =>{
-    //     this.setState({title: this.props.title,
-    //                    date: this.props.date,
-    //                    description: this.props.description});
-    // };
-
+    
     
     render(){
         return( 
-            // <div>
-            //     <div className="blog-entry-title">{this.props.title}</div>
-            //     <div className="blog-entry-date">{this.props.date}</div>
-            //     <div className="blog-entry-description">{this.props.description}</div>
-            // </div>
             <div>
                 <div className="blog-entry-description">{this.props.description}</div>
             </div>
@@ -50,4 +39,4 @@ class Blogentry extends React.Component{
 }
 
 
-export default Blogentry;
+export default withRouter(Blogentry);
