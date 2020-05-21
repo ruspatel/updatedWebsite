@@ -35,7 +35,8 @@
 .blog-entry{
   margin-right: 200px;
   border: 2px solid brown;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   align-content: left;
   text-align: left;
 }
