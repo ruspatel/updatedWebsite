@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route, useRouteMatch} from 'react-router-dom';
 
 import Nav from './Components/nav.js';
 import Blog from './Components/blog.js';
@@ -28,5 +28,7 @@ function App() {
 
   );
 }
+
+
 
 export default (App);
