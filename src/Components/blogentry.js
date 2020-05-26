@@ -3,21 +3,21 @@ import '../App.css';
 import { withRouter, useParams } from 'react-router-dom';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Blog from './blog'
+import './Blog.css';
+import calendarIcon from './calendarIcon.png';
 
 
 
-
-function Blogentry(){
-
-    console.log('hello i am on blogentry');
-    // let {blogId} = useParams();
-    // console.log(blogId);
-
+function blogentry(props){
+    
     return(
-        <div>
-            <h1>YAY</h1>
-            <h1>blogId</h1>
-            <div className="blog-entry-description">Hello World</div>
+        <div className="blog-entry-container">
+            <div className="blog-entry-header">
+                <div className="blogentry-title">{props.titleEntry}</div>
+                <img class="calendar" src={calendarIcon}/>
+                <div className="blogentry-date">{props.dateEntry}</div>
+            </div>
+            <div className="blog-entry-description">{props.descriptionEntry}</div>
         </div>
     );
 }
@@ -43,4 +43,4 @@ function Blogentry(){
 // }
 
 
-export default Blogentry;
+export default blogentry;

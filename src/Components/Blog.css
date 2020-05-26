@@ -1,0 +1,40 @@
+.blog-entry-container{
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: beige;
+    border: 2px solid black;
+    height: unset;
+
+}
+
+.blog-entry-header{
+    display: inline-flexbox;
+    margin: auto;
+    align-content: center;
+    background-color: violet;
+    border: 2px solid blue;
+    margin-right: 300px;
+    text-align: left;
+}
+.blogentry-title{
+    position: relative;
+    margin-left: 0px;
+    color: black;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.blogentry-date{
+
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.calendar{
+    justify-content: space-evenly;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+}

@@ -20,6 +20,8 @@ function entry(props){
             <h1>YAY</h1>
 
             <div className="blog-entry-description">{props.name}</div>
+            <div className="blog-entry-description">{props.date}</div>
+
         </div>
     );
 }

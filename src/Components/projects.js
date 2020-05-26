@@ -6,14 +6,6 @@ import '../App.js';
 
 
 function Projects(){
-  const [name, updateName] = useState([
-    {
-      name: 'Harry Potter and the Prisoner of Azkaban'
-    },
-    {
-      name: 'Harry Potter and the Goblet of Fire'
-    }
-  ]);
 
     return(
         
@@ -28,12 +20,14 @@ function Projects(){
             
             {/* <Link to="/projects/entry"><h1>Entry</h1></Link> */}
 
-          <Link to={{
+          {/* <Link to={{
             pathname: "/projects/entry",
             state:{
               name: 'Harry Potter'
             } 
-          }}><h1>Entry</h1></Link>
+          }}><h1>Entry</h1></Link> */}
+          <Link to="/projects/entry"><h1>Entry</h1></Link>
+          
 
     <hr />
           </div>
