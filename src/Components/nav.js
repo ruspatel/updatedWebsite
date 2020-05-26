@@ -9,13 +9,15 @@ function nav(){
     
     return(
         <div className="navbar">
-            <Link exact className="header-link" to="/about"><h1>About</h1></Link>
-            <Link exact className="header-link" to="/blog"><h1>Blog</h1></Link>
-            <Link exact className="header-link" to="/projects"><h1>Projects</h1></Link>
-            <Link exact className="header-link" to="/experience"><h1>Experience</h1></Link>
-            <h1>Resume</h1>
+            <Link exact="true" className="header-link" to="/about"><h1>About</h1></Link>
+            <Link exact="true" className="header-link" to="/blog"><h1>Blog</h1></Link>
+            <Link exact="true" className="header-link" to="/projects"><h1>Projects</h1></Link>
+            <Link exact="true" className="header-link" to="/experience"><h1>Experience</h1></Link>
+            <Link exact="true" className="header-link" to="/resume"><h1>Resume</h1></Link>
         </div>
     );
 }
+
+
 
 export default (nav);

@@ -9,14 +9,15 @@ import Blog from './blog'
 
 function Blogentry(){
 
-    let {blogId} = useParams();
-    console.log(blogId);
+    console.log('hello i am on blogentry');
+    // let {blogId} = useParams();
+    // console.log(blogId);
 
     return(
         <div>
             <h1>YAY</h1>
+            <h1>blogId</h1>
             <div className="blog-entry-description">Hello World</div>
-
         </div>
     );
 }
@@ -26,15 +27,12 @@ function Blogentry(){
 //         super(props);
 
 //         this.state={
-//             title: "",
-//             date: "",
-//             description: ""
+           
 //         };
 
 //         let {blogId} = useParams();
 //     }
 
-    
 //     render(){
 //         return( 
 //             <div>
